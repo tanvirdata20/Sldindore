@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:#f4f7fb;
+  color:#1f2937;
+  line-height:1.6;
+  overflow-x:hidden;
+}
+
+#root{
+  min-height:100vh;
+}
+
+/* Card Styling */
+.card{
+  background:#fff;
+  border-radius:16px;
+  box-shadow:
+      0 8px 24px rgba(15,23,42,.08),
+      0 2px 6px rgba(15,23,42,.05);
+  transition:.3s ease;
+}
+
+.card:hover{
+  transform:translateY(-4px);
+  box-shadow:
+      0 14px 32px rgba(15,23,42,.12),
+      0 4px 12px rgba(15,23,42,.08);
+}
+
+/* Header */
+header{
+  box-shadow:0 8px 20px rgba(0,0,0,.18);
+}
+
+/* Tables */
+table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+thead{
+  background:#f8fafc;
+}
+
+th{
+  color:#475569;
+  font-weight:700;
+}
+
+td,th{
+  padding:14px;
+}
+
+tbody tr{
+  transition:.2s;
+}
+
+tbody tr:hover{
+  background:#f8fbff;
+}
+
+/* Chart */
+canvas{
+  max-width:100%;
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#edf2f7;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#00A1E0;
+    border-radius:10px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#0284c7;
+}
+
+/* Selection */
+
+::selection{
+    background:#00A1E0;
+    color:white;
+}
+
+/* Buttons */
+
+button{
+    cursor:pointer;
+    border:none;
+    outline:none;
+}
+
+/* Images */
+
+img{
+    max-width:100%;
+    display:block;
+}
